@@ -7,9 +7,9 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg">
-                <x-welcome />
-            </div>
+            @livewire('create-post')
+
+            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nisi ex temporibus, provident sequi laborum aliquam ad quia labore dolor! Quia molestias veritatis quidem reprehenderit, in fuga eius. Excepturi, accusantium!</p>
         </div>
     </div>
 </x-app-layout>
