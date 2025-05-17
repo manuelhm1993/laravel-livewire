@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\CreatePost;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -11,7 +12,6 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    // Componente de página completa, permite que el componente actúe como un controlador y toda la vista sea reactiva
+    Route::get('/dashboard', CreatePost::class)->name('dashboard');
 });
